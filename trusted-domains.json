@@ -1,0 +1,218 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-04-06",
+  "trustedDomains": {
+    "microsoft": {
+      "domains": [
+        "microsoft.com",
+        "live.com",
+        "outlook.com",
+        "office.com",
+        "azure.com",
+        "microsoftonline.com",
+        "sharepoint.com",
+        "windows.com",
+        "office365.com"
+      ],
+      "loginPaths": [
+        "/login",
+        "/signin",
+        "/auth",
+        "/account",
+        "oauth2/v2.0/authorize"
+      ],
+      "visualElements": [
+        "Microsoft",
+        "Outlook",
+        "Office 365",
+        "Azure"
+      ],
+      "brandPatterns": [
+        "microsoft",
+        "micros0ft",
+        "mircosoft",
+        "micr0s0ft",
+        "micosoft",
+        "microsft",
+        "micro.{0,3}soft"
+      ]
+    },
+    "google": {
+      "domains": [
+        "google.com",
+        "gmail.com",
+        "googleusercontent.com",
+        "accounts.google.com",
+        "googleapis.com",
+        "google.co.uk",
+        "google.co.in",
+        "gstatic.com",
+        "youtube.com"
+      ],
+      "loginPaths": [
+        "/signin",
+        "/login",
+        "/accounts",
+        "o/oauth2/v2/auth"
+      ],
+      "visualElements": [
+        "Google",
+        "Gmail",
+        "Google Workspace",
+        "YouTube"
+      ],
+      "brandPatterns": [
+        "google",
+        "g00gle",
+        "googie",
+        "g0ogle",
+        "googgle",
+        "gooogle",
+        "go{2,}gle",
+        "g[o0]{1,}gle"
+      ]
+    },
+    "facebook": {
+      "domains": [
+        "facebook.com",
+        "fb.com",
+        "meta.com",
+        "instagram.com"
+      ],
+      "loginPaths": [
+        "/login",
+        "/auth",
+        "/dialog/oauth"
+      ],
+      "visualElements": [
+        "Facebook",
+        "Meta",
+        "Instagram"
+      ],
+      "brandPatterns": [
+        "facebook",
+        "faceb00k",
+        "faceboook",
+        "faecbook",
+        "meta",
+        "f.?acebook",
+        "fac.{0,2}book"
+      ]
+    },
+    "apple": {
+      "domains": [
+        "apple.com",
+        "icloud.com",
+        "itunes.apple.com",
+        "appleid.apple.com"
+      ],
+      "loginPaths": [
+        "/signin",
+        "/auth",
+        "/login"
+      ],
+      "visualElements": [
+        "Apple ID",
+        "iCloud"
+      ],
+      "brandPatterns": [
+        "apple",
+        "appl",
+        "aple",
+        "appie",
+        "appl.{0,1}e"
+      ]
+    },
+    "paypal": {
+      "domains": [
+        "paypal.com"
+      ],
+      "loginPaths": [
+        "/signin",
+        "/login",
+        "/webapps/auth/protocol/openidconnect/v1/authorize"
+      ],
+      "visualElements": [
+        "PayPal"
+      ],
+      "keywords": [
+        "paypal",
+        "pay pal",
+        "paypal.com"
+      ],
+      "domainPatterns": [
+        "^paypal-.*\\.com$",
+        "^.*-paypal\\.com$"
+      ],
+      "brandPatterns": [
+        "paypal",
+        "pay\\s*pal",
+        "paaypal",
+        "payp@l",
+        "paypol",
+        "paypa1",
+        "paypl",
+        "pay.?pa.?l",
+        "pa.?ypal"
+      ]
+    }
+  },
+  "phishingPatterns": {
+    "suspiciousSubdomains": [
+      "login",
+      "signin",
+      "account",
+      "secure",
+      "security",
+      "verify",
+      "auth",
+      "authenticate",
+      "service",
+      "myaccount",
+      "confirm",
+      "update",
+      "support",
+      "billing",
+      "recover",
+      "admin",
+      "portal"
+    ],
+    "suspiciousDomainPatterns": [
+      "-account",
+      "-login",
+      "-secure",
+      "-verify",
+      "-support",
+      "-billing",
+      "account-",
+      "login-",
+      "secure-",
+      "verify-",
+      "support-",
+      "billing-",
+      "my-",
+      "-my",
+      "web-",
+      "online-",
+      "-online",
+      "service-",
+      "-service"
+    ],
+    "suspiciousTlds": [
+      ".zip",
+      ".mov",
+      ".xyz",
+      ".top",
+      ".club",
+      ".site",
+      ".online",
+      ".live",
+      ".info",
+      ".cf",
+      ".ga",
+      ".gq",
+      ".ml",
+      ".tk"
+    ]
+  }
+}
