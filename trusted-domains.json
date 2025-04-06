@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "lastUpdated": "2025-04-06",
   "trustedDomains": {
     "microsoft": {
@@ -15,10 +15,6 @@
         "office365.com"
       ],
       "loginPaths": [
-        "/login",
-        "/signin",
-        "/auth",
-        "/account",
         "oauth2/v2.0/authorize"
       ],
       "visualElements": [
@@ -50,8 +46,6 @@
         "youtube.com"
       ],
       "loginPaths": [
-        "/signin",
-        "/login",
         "/accounts",
         "o/oauth2/v2/auth"
       ],
@@ -80,8 +74,6 @@
         "instagram.com"
       ],
       "loginPaths": [
-        "/login",
-        "/auth",
         "/dialog/oauth"
       ],
       "visualElements": [
@@ -106,11 +98,7 @@
         "itunes.apple.com",
         "appleid.apple.com"
       ],
-      "loginPaths": [
-        "/signin",
-        "/auth",
-        "/login"
-      ],
+      "loginPaths": [],
       "visualElements": [
         "Apple ID",
         "iCloud"
@@ -128,8 +116,6 @@
         "paypal.com"
       ],
       "loginPaths": [
-        "/signin",
-        "/login",
         "/webapps/auth/protocol/openidconnect/v1/authorize"
       ],
       "visualElements": [
@@ -155,9 +141,55 @@
         "pay.?pa.?l",
         "pa.?ypal"
       ]
+    },
+    "amazon": {
+      "domains": [
+        "amazon.com",
+        "amazon.co.uk",
+        "amazon.de",
+        "amazon.ca",
+        "amazon.co.jp",
+        "amazon.fr",
+        "amazon.in",
+        "amazon.it",
+        "amazon.es",
+        "amazon.com.au",
+        "amazon.com.br",
+        "amazon.com.mx"
+      ],
+      "loginPaths": [
+        "/ap/signin"
+      ],
+      "visualElements": [
+        "Amazon",
+        "Prime"
+      ],
+      "brandPatterns": [
+        "amazon",
+        "amaz0n",
+        "amzon",
+        "amazonn"
+      ]
     }
   },
   "phishingPatterns": {
+    "commonLoginPaths": [
+      "/login",
+      "/signin",
+      "/auth",
+      "/account",
+      "/authorize",
+      "/authenticate",
+      "/logon",
+      "/sign-in",
+      "/login.php",
+      "/login.aspx",
+      "/login.html",
+      "/login.jsp",
+      "/login/",
+      "/signin/",
+      "/auth/"
+    ],
     "suspiciousSubdomains": [
       "login",
       "signin",
@@ -175,7 +207,10 @@
       "billing",
       "recover",
       "admin",
-      "portal"
+      "portal",
+      "mail",
+      "webmail",
+      "owa"
     ],
     "suspiciousDomainPatterns": [
       "-account",
@@ -196,7 +231,9 @@
       "online-",
       "-online",
       "service-",
-      "-service"
+      "-service",
+      "-update",
+      "update-"
     ],
     "suspiciousTlds": [
       ".zip",
@@ -212,7 +249,23 @@
       ".ga",
       ".gq",
       ".ml",
-      ".tk"
-    ]
+      ".tk",
+      ".work",
+      ".link",
+      ".click",
+      ".biz",
+      ".icu",
+      ".website",
+      ".pw"
+    ],
+    "commonMisspellings": {
+      "microsoft": ["micros0ft", "mircosoft", "micr0s0ft", "micosoft", "verify-microsoft", "microsft"],
+      "google": ["g00gle", "googie", "g0ogle", "googgle", "gooogle", "google-support", "gogle"],
+      "facebook": ["faceb00k", "faceboook", "faecbook", "meta-support", "facbook"],
+      "apple": ["appl", "aple", "appie", "icloud-support", "appleid-support"],
+      "office": ["offfice", "0ffice", "office365-support"],
+      "paypal": ["paypol", "paypa1", "paypal-secure", "paypl", "pypal"],
+      "amazon": ["amaz0n", "amzon", "amazon-support", "prime-support"]
+    }
   }
 }
